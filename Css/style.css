@@ -29,6 +29,7 @@ img{
 }
 
 
+
 /* CONTAINER */
 .container{
     width: 100%;
@@ -44,24 +45,36 @@ img{
 /* MAIN-CONTENT */
 .main-content{
     flex-grow: 1;
+    margin-top: 100px;
 }
 
-.box{
-    height: 757px;
-    background-color: lightcyan;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 120px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    background-image: linear-gradient(
-        to right bottom,
-        yellow,
-        black
-    );
-    /* -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+.select{
+    width: 200px;
+    height: 30px;
+    margin-right: 50px;
+    background-color: skyblue;
+}
+
+.input{
+    padding: 5px;
+    width: 250px;
+    height: 35px;
+}
+
+.input:focus{
+    outline: 1px dashed #000;
+    outline-offset: 3px;
+}
+
+
+.input:not(:placeholder-shown){
+    border-color: red;
+}
+
+.input:valid{
+    border-color: green;
+}
+
+.input:disabled{
+    background-color: #ddd;
 }
